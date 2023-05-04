@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Order Form</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body style="color:white;" >
+	<h1>Pizza Order Form</h1>
+	<form>
+		<label>Size:</label>
+		<input type="radio" name="size" value="small" checked> Small (₹99)<br>
+		<input type="radio" name="size" value="medium"> Medium (₹199)<br>
+		<input type="radio" name="size" value="large"> Large (₹399)<br>
+
+		<label>Crust:</label>
+		<input type="radio" name="crust" value="thin" checked> Thin<br>
+		<input type="radio" name="crust" value="deep"> Deep (+₹20)<br>
+
+		<label>Toppings:</label>
+		<input type="checkbox" name="toppings" value="mushrooms"> Mushrooms (+₹15)<br>
+		<input type="checkbox" name="toppings" value="olives"> Olives (+₹10)<br>
+		<input type="checkbox" name="toppings" value="fingernail"> Fingernail (+₹30)<br>
+		<input type="checkbox" name="toppings" value="spicy beef"> Spicy Beef (+₹20)<br>
+
+		<label>Delivery:</label>
+		<input type="radio" name="delivery" value="pickup" checked> Pickup<br>
+		<input type="radio" name="delivery" value="delivery"> Delivery (+₹25)<br>
+
+		<button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+		<p>Total Cost: <span id="totalCost"></span></p>
+	</form>
+
+	<script src="./index.js">
+		
+        </script>
+        </body>
+        </html>
